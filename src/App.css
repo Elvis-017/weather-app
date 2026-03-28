@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  font-family: 'Segoe UI', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  padding-top: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #e0e0e0;
+}
+
+.input-group {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 14px 20px;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  box-shadow: none;
+  border: none;
+}
+
+.btn-primary {
+  background: #e94560;
+  border: none;
+  padding: 14px 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  background: #c73652;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: white;
+
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.display-4 {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #e94560;
+}
+
+.text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.row.mt-3 .col {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+.row.mt-3 .col:last-child {
+  border-right: none;
+}
+
+.row.mt-3 strong {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.row.mt-3 p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 5px 0 0 0;
+}
+
+.alert-danger {
+  background: rgba(233, 69, 96, 0.2);
+  border: 1px solid #e94560;
+  color: #ff8fa3;
+  border-radius: 12px;
 }
